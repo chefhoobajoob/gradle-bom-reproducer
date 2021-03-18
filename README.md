@@ -1,4 +1,5 @@
 All files named file-1.js and file-2.js include a UTF-8 BOM
+
 All files named file-3.js have no BOM
 
 1. clone repo onto Ubuntu Bionic system
