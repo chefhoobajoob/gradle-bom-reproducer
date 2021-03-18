@@ -1,0 +1,14 @@
+apply plugin: 'distribution'
+distributions {
+    main {
+        contents {
+            baseName = 'anything'
+            into ("/src") {
+                from "${projectDir}/src" 
+                    filter{ it.replaceAll('\\$VERSION_MAJOR\\$', '1')}
+                    filter{ it.replaceAll('\\$VERSION_MINOR\\$', '0')}
+                    filter{ it.replaceAll('\\$VERSION_BUILD\\$', '0')}
+            }
+        }
+    }
+}

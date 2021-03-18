@@ -1,0 +1,7 @@
+.vscode
+.gradle
+.project
+build
+/.settings
+
+/.idea/
